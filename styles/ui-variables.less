@@ -56,14 +56,14 @@
 @text-color-info:    hsl(265,  89%, 78%);
 @text-color-success: hsl(135,  94%, 65%);
 @text-color-warning: hsl(31, 100%, 71%);
-@text-color-error:   hsl(326, 100%, 74%);
+@text-color-error:   hsl(0, 100%, 66%);
 
 
 // Background -----------------
 @background-color-info:    hsl(135,  94%, 65%);
 @background-color-success: hsl(265,  89%, 78%);
 @background-color-warning: hsl(31, 100%, 71%);
-@background-color-error:   hsl(326, 100%, 74%);
+@background-color-error:   hsl(0, 100%, 66%);
 
 @background-color-highlight: lighten(@base-background-color, 4%);
 @background-color-selected:  lighten(@base-background-color, 8%);
@@ -141,7 +141,7 @@
 // These variables are only used in this theme
 // ----------------------------------------------
 
-@ui-theme-name: one-dark-ui;
+@ui-theme-name: tomow1-dark-ui;
 
 // Text (Custom) -----------------
 @text-color-faded: fade(@text-color, 20%);
@@ -183,8 +183,10 @@
 @progress-background-color:         @base-accent-color;
 
 @scrollbar-color:                   @level-1-color;
+@scrollbar-color-active:            @base-accent-color;
 @scrollbar-background-color:        @level-3-color; // replaced `transparent` with a solid color to test https://github.com/atom/one-light-ui/issues/4
 @scrollbar-color-editor:            contrast(@ui-syntax-color, darken(@ui-syntax-color, 18%), lighten(@ui-syntax-color, 9%) );
+@scrollbar-color-editor-active:     @base-accent-color;
 @scrollbar-background-color-editor: @ui-syntax-color;
 
 
