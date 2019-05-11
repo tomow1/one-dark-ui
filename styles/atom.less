@@ -35,15 +35,17 @@ atom-workspace {
 	}
 
 	::-webkit-scrollbar-thumb:vertical:active {
-		border-radius: 0;
-		border-left-width: 0;
-		border-right-width: 0;
+		border-radius: 5px;
+		border-left-width: 2px;
+		border-right-width: 2px;
+		background: @scrollbar-color-active;
 	}
 
 	::-webkit-scrollbar-thumb:horizontal:active {
-		border-radius: 0;
-		border-top-width: 0;
-		border-bottom-width: 0;
+		border-radius: 5px;
+		border-left-width: 2px;
+		border-right-width: 2px;
+		background: @scrollbar-color-active;
 	}
 
 	atom-text-editor {
@@ -56,6 +58,12 @@ atom-workspace {
 		::-webkit-scrollbar-thumb {
 			border-color: @scrollbar-background-color-editor;
 			background: @scrollbar-color-editor;
+		}
+		/deep/ ::-webkit-scrollbar-thumb:vertical:active {
+	background: @scrollbar-color-editor-active;
+		}
+		/deep/ ::-webkit-scrollbar-thumb:horizontal:active {
+			background: @scrollbar-color-editor-active;
 		}
 	}
 }

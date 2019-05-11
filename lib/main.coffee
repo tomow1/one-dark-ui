@@ -1,5 +1,5 @@
 root = document.documentElement
-themeName = 'one-dark-ui'
+themeName = 'tomow1-dark-ui'
 
 
 module.exports =

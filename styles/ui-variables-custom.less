@@ -13,7 +13,7 @@
 @ui-s-l: lightness(@ui-syntax-color);
 @ui-inv: 10%; // inverse lightness if below
 
-.ui-hue() when (@ui-s-s = 0) { @ui-hue: 220; } // Use blue hue when no saturation
+.ui-hue() when (@ui-s-s = 0) { @ui-hue: 265; } // Use blue hue when no saturation
 .ui-hue() when (@ui-s-s > 0) { @ui-hue: @ui-s-h; }
 .ui-hue();
 
@@ -45,7 +45,7 @@
 // These variables are only used in this theme
 // ----------------------------------------------
 
-@ui-theme-name: one-dark-ui;
+@ui-theme-name: tomow1-dark-ui;
 
 // Text (Custom) -----------------
 @text-color-faded: fade(@text-color, 20%);
@@ -98,8 +98,10 @@
 @progress-background-color:         @accent-color;
 
 @scrollbar-color:                   lighten(@ui-syntax-color, 16%);
+@scrollbar-color-active:            @accent-color;
 @scrollbar-background-color:        @level-3-color; // replaced `transparent` with a solid color to test https://github.com/atom/one-light-ui/issues/4
 @scrollbar-color-editor:            lighten(@ui-syntax-color, 16%);
+@scrollbar-color-editor-active:     @accent-color;
 @scrollbar-background-color-editor: @ui-syntax-color;
 
 
